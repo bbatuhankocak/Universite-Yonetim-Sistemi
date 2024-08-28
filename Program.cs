@@ -134,7 +134,7 @@ namespace UniversiteSistemi
     }
 
 
-    public class Kisi
+    public class Kisi // öğretim üyesi ve öğrencinin inherite edileceği sınıf 
     {
         private string ad;
         private string soyad;
@@ -157,7 +157,7 @@ namespace UniversiteSistemi
             get { return soyad; }
         }
 
-        public virtual void DersleriListele()
+        public virtual void DersleriListele() // override edilmesi için base method
         {
 
         }
@@ -176,12 +176,12 @@ namespace UniversiteSistemi
             this.dersListesi = dersListesi;
         }
 
-        public void DerseOgretmenEkle(Ders _ders)
+        public void OgretmeneDersEKle(Ders _ders) // öğretim üyesine ders ekler
         {
             dersListesi.Add(_ders);
         }
 
-        public void DerstenOgretmenCikart(Ders _ders)
+        public void OgretmendenDersCikart(Ders _ders) // çıkartır
         {
             dersListesi.Remove(_ders);
 
@@ -194,7 +194,7 @@ namespace UniversiteSistemi
             Console.WriteLine(dersListesi);
         }
 
-        public void DisplayInfo()
+        public void DisplayInfo() // interfaceden kullanılan method
         {
             Console.WriteLine("Öğretim üyesi : " +  Ad + " " + Soyad + " " + "Ünvan : " + unvan);
         }
@@ -214,17 +214,17 @@ namespace UniversiteSistemi
             this.kayitliDersler = kayitliDersler;
         }
 
-        public void DerseOgrenciEkle(Ders _yeniDers)
+        public void DerseOgrenciEkle(Ders _yeniDers) // kayıtlı dersler listesine Ders ekler
         {
             kayitliDersler.Add(_yeniDers);
         }
 
-        public void DerstenOgrenciCikart(Ders _yeniDers)
+        public void DerstenOgrenciCikart(Ders _yeniDers) // çıkartır
         {
             kayitliDersler.Remove(_yeniDers);
         }
 
-        public override void DersleriListele()
+        public override void DersleriListele() // override edilen listeleme methodu
         {
             base.DersleriListele();
 
@@ -239,7 +239,7 @@ namespace UniversiteSistemi
             get {  return kayitliDersler; }
         }
 
-        public void DisplayInfo()
+        public void DisplayInfo() // interfaceden kullanılan method
         {
             Console.WriteLine("Öğrenci : " + Ad + " " + Soyad + " " + "Numara " + ogrenciNum);
         }
@@ -262,6 +262,7 @@ namespace UniversiteSistemi
             this.ogrenciListesi = ogrenciListesi;
         }
 
+        // private değerler için propertyler
         public string DersAdi
         {
             get { return dersAdi; }
@@ -280,7 +281,7 @@ namespace UniversiteSistemi
            
         }
 
-        public void BilgileriGoster()
+        public void BilgileriGoster() // dersin tüm bilgilerini gösteren method
         {
             Console.WriteLine(dersAdi + " " + kredi + " " + dersinOgretmeni.Ad + "\nSınıf listesi :");
 
@@ -290,7 +291,7 @@ namespace UniversiteSistemi
             }
         }
 
-        public void OgrenciEkle(Ogrenci _yeniOgrenci)
+        public void OgrenciEkle(Ogrenci _yeniOgrenci) // listeye öprenci ekler
         {
             ogrenciListesi.Add(_yeniOgrenci);
         }
@@ -344,8 +345,8 @@ namespace UniversiteSistemi
             kimyaMuhendislik.OgrenciEkle(ogrenci_1);
             kimyaMuhendislik.OgretimUyesiEkle(ogretimUyesi_1);
 
-            ogretimUyesi_1.DerseOgretmenEkle(biyokimya101);
-            ogretimUyesi_1.DerseOgretmenEkle(basitkimya101);
+            ogretimUyesi_1.OgretmeneDersEKle(biyokimya101);
+            ogretimUyesi_1.OgretmeneDersEKle(basitkimya101);
 
             ogretimUyesi_1.DisplayInfo();
             ogrenci_1.DisplayInfo();
