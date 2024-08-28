@@ -1,0 +1,14 @@
+C:\Users\bbatu\source\repos\OOP_Project_0\OOP_Project_0\bin\Debug\net8.0\OOP_Project_0.exe
+C:\Users\bbatu\source\repos\OOP_Project_0\OOP_Project_0\bin\Debug\net8.0\OOP_Project_0.deps.json
+C:\Users\bbatu\source\repos\OOP_Project_0\OOP_Project_0\bin\Debug\net8.0\OOP_Project_0.runtimeconfig.json
+C:\Users\bbatu\source\repos\OOP_Project_0\OOP_Project_0\bin\Debug\net8.0\OOP_Project_0.dll
+C:\Users\bbatu\source\repos\OOP_Project_0\OOP_Project_0\bin\Debug\net8.0\OOP_Project_0.pdb
+C:\Users\bbatu\source\repos\OOP_Project_0\OOP_Project_0\obj\Debug\net8.0\OOP_Project_0.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bbatu\source\repos\OOP_Project_0\OOP_Project_0\obj\Debug\net8.0\OOP_Project_0.AssemblyInfoInputs.cache
+C:\Users\bbatu\source\repos\OOP_Project_0\OOP_Project_0\obj\Debug\net8.0\OOP_Project_0.AssemblyInfo.cs
+C:\Users\bbatu\source\repos\OOP_Project_0\OOP_Project_0\obj\Debug\net8.0\OOP_Project_0.csproj.CoreCompileInputs.cache
+C:\Users\bbatu\source\repos\OOP_Project_0\OOP_Project_0\obj\Debug\net8.0\OOP_Project_0.dll
+C:\Users\bbatu\source\repos\OOP_Project_0\OOP_Project_0\obj\Debug\net8.0\refint\OOP_Project_0.dll
+C:\Users\bbatu\source\repos\OOP_Project_0\OOP_Project_0\obj\Debug\net8.0\OOP_Project_0.pdb
+C:\Users\bbatu\source\repos\OOP_Project_0\OOP_Project_0\obj\Debug\net8.0\OOP_Project_0.genruntimeconfig.cache
+C:\Users\bbatu\source\repos\OOP_Project_0\OOP_Project_0\obj\Debug\net8.0\ref\OOP_Project_0.dll
